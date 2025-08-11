@@ -2,9 +2,7 @@
 
 > `Navegación:` [Módulo 2](https://github.com/git-jrm/ing-datos-M2), [Módulo 3](https://github.com/git-jrm/ing-datos-M3), [Módulo 4](https://github.com/git-jrm/ing-datos-M4)
 
-En este espacio exploraremos los principales aspectos aprendidos.
-
-intro...
+En este espacio exploraremos los principales aspectos aprendidos planteandolo de una manera **atractiva** mediante escenarios actuales de empresas y planteando un caso hipotetico con un fin edicativo.
 
 ## Índice:
 - [Análisis de caso - Tecnologías de base de datos](#análisis-de-caso---tecnologías-de-base-de-datos)
@@ -431,12 +429,16 @@ https://docs.aws.amazon.com/es_es/amazondynamodb/latest/developerguide/LSI.html
 
 ## Evolución del Aprendizaje
 
-...
+A lo largo de todas las actividades desarrolladas pudimos profundizar conceptos de arquitecturas de bases de datos y escenarios actuales complejos resueltos con tecnologías modernas.
 
 [Volver](#m4-bases-de-datos-para-ingenieros-de-datos)
 
 ## Conclusiones
 
-...
+El aprendizaje del **módulo 4** nos permitió comparar en profundidad los aspectos de mayor relevancia de los dos paradigmas principales de bases de datos el Relacional y el NoSQL (o no relacional), permitiendonos identificar las fortalezas y limitaciones de ambos.
+
+Los escenarios hipoteticos desarrollados nos permitieron plantear ejemplos donde la alta disponibilidad, la flexibilidad y la arquitectura de escalado eran elementos clave.
+
+Las soluciones hibridas desarrolladas nos mostraron escenarios actuales en las que organizaciones han tenido que tomar decisiones decisivas en momentos en los que la infraestructura que sirvió para llegar ya no es sificiente.
 
 [Volver](#m4-bases-de-datos-para-ingenieros-de-datos)
