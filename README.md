@@ -411,11 +411,15 @@ Amazon S3: para exportación/importación masiva de datos.
 Amazon CloudWatch: para monitoreo, alarmas y otras métricas.
 AWS Step Functions: para orquestar flujos de trabajo complejos.
 
+[Volver](#m4-bases-de-datos-para-ingenieros-de-datos)
+
 ### Conclusiones
 
 La adopción de DynamoDB ofrece a PCFactory una plataforma de base de datos altamente escalable y de baja latencia, capaz de absorber peaks de carga sin degradar la experiencia del cliente. Su modelo serverless reduce la complejidad operativa y facilita la evolución futura del sistema sin interrumpir el servicio.
 
 Si bien la migración implica desafíos como la adaptación del modelo de datos y la gestión de costos variables, los beneficios en rendimiento, disponibilidad e integración nativa con otras herramientas de AWS, otorgan beneficios que consolidan la posición de líder de la empresa.
+
+[Volver](#m4-bases-de-datos-para-ingenieros-de-datos)
 
 ### Bibliografía:
 
