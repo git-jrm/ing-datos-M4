@@ -202,6 +202,7 @@ Se definió el GSI PedidosPorTienda para que sucursales y matriz obtengan eficie
 A continuación se muestra la estructura de creación de la tabla y un CRUD completo a modo de ejemplos.
 
 Creación de la tabla Pedidos:
+```bash
 $ aws dynamodb create-table \
   --table-name Pedidos \
   --attribute-definitions \
@@ -238,8 +239,10 @@ $ aws dynamodb create-table \
     }
   ]' \
   --provisioned-throughput WriteCapacityUnits=10000
+```
 
 Crea Pedido:
+```bash
 $ aws dynamodb put-item \
   --table-name Pedidos \
   --item '{
@@ -251,14 +254,18 @@ $ aws dynamodb put-item \
     "ValorUnidad": {"N": "699000"},
     "TiendaID": {"N": "137"}
   }'
+```
 
 Consulta Pedidos para clientes:
+```bash
 $ aws dynamodb query \
   --table-name Pedidos \
   --key-condition-expression "ClienteID = :id" \
   --expression-attribute-values '{":id":{"S": "C1985"}}'
+```
 
 Salida:
+```bash
 {
     "Items": [
         {
@@ -289,8 +296,10 @@ Salida:
     "ScannedCount": 1,
     "ConsumedCapacity": null
 }
+```
 
 Actualiza Pedido y retorna para verificar:
+```bash
 $ aws dynamodb update-item \
   --table-name Pedidos \
   --key '{
@@ -302,8 +311,10 @@ $ aws dynamodb update-item \
     ":t": {"S": "CL137"}
   }' \
   --return-values ALL_NEW
+```
 
 Salida:
+```bash
 {
     "Attributes": {
         "ClienteID": {
@@ -329,8 +340,10 @@ Salida:
         }
     }
 }
+```
 
 Elimina Pedido:
+```bash
 $ aws dynamodb delete-item \
   --table-name Pedidos \
   --key '{
@@ -338,8 +351,10 @@ $ aws dynamodb delete-item \
     "PedidoID": {"S": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d"}
   }' \
   --return-values ALL_OLD
+```
 
 Salida:
+```bash
 {
     "Attributes": {
         "ClienteID": {
@@ -365,6 +380,7 @@ Salida:
         }
     }
 }
+```
 
 Este diseño permite manejar grandes volúmenes de pedidos distribuyendo uniformemente la carga de lectura y escritura gracias a la clave compuesta. Los LSI facilitan ordenar pedidos por fecha dentro de la misma tienda, mientras que los GSI habilitan consultas por cliente y por estado sin afectar el rendimiento de la tabla principal. El uso de WriteCapacityUnits garantizan alta concurrencia para usuarios y el ReadCapacityUnits garantiza información de calidad para sucursales y casa matriz.
 
