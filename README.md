@@ -9,7 +9,7 @@ En este espacio exploraremos los principales aspectos aprendidos planteandolo de
 - [Análisis de caso - Bases de datos no relacionales](#análisis-de-caso---bases-de-datos-no-relacionales)
 - [Análisis de caso - DynamoDB](#análisis-de-caso---dynamodb)
 - [Evolución del Aprendizaje](#evoluci%C3%B3n-del-aprendizaje)
-- [Conclusiones](#conclusiones)
+- [Conclusiones](#conclusiones-3)
 
 ## Análisis de caso - Tecnologías de base de datos
 
